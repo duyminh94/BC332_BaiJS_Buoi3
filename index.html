@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bài Tập JS Buổi 12-13</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Bài 1 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Tính Lương Nhân Viên
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Tiền Lương 1 Ngày </label>
+              <input id="tienluong" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Ngày Làm</label>
+              <input id="ngaylam" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <!-- onlick tổng() trong button-->
+            <div id="btntinhnao" class="btn btn-success" onclick="tong()">Tháng Lãnh Lương</div>
+          </div>
+          <div id="showIntotal" class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- Bài 2 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Tính Giá Trị Trung Bình
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Number1 </label>
+              <input id="number1" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Number2</label>
+              <input id="number2" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Number3</label>
+              <input id="number3" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Number4</label>
+              <input id="number4" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Number5</label>
+              <input id="number5" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <!-- onlick tổng() trong button-->
+            <div id="btntinhtb" class="btn btn-success" onclick="tong()">Giá Trị Trung Bình</div>
+          </div>
+          <div id="showTotal" class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- Bài 3 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Đổi Tiền USD
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Tiền Việt Nam </label>
+              <input id="moneyvn" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>USD</label>
+              <input id="moneyusd" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <!-- onlick tổng() trong button-->
+            <div id="btntinhmoney" class="btn btn-success" onclick="tong()">Tháng Lãnh Lương</div>
+          </div>
+          <div id="showIntotalmoney" class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+
+  <!-- Bài 4 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Tính Chu Vi và Diện Tích Hình Chữ Nhật
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Chiều Dài </label>
+              <input id="height" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <div class="form-group">
+              <label>Chiều Rộng</label>
+              <input id="width" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <!-- onlick tổng() trong button-->
+            <div id="btntinhCS" class="btn btn-success" onclick="tong()">Tính</div>
+          </div>
+          <div id="showIntotalCS" class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br />
+  <br />
+  <br />
+
+  <!-- Bài 5 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Tính Hai Ký Số
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Hai Ký Số </label>
+              <input id="twonumber" type="number" name="" id="" class="form-control" placeholder=""
+                aria-describedby="helpId">
+            </div>
+            <!-- onlick tổng() trong button-->
+            <div id="btntinhnumber" class="btn btn-success" onclick="tong()">Tính</div>
+          </div>
+          <div id="showIntotalnumber" class="card-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
